@@ -1,0 +1,80 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["custom/updates", "network", "pulseaudio", "disk", "memory", "cpu", "temperature", "clock"],
+    "hyprland/window": {
+        "max-length": 50
+    },
+    "custom/updates": {
+        "format": "󰚰 {}",
+        "exec": "echo $(checkupdates 2>/dev/null | wc -l) + $(yay -Qua 2>/dev/null | wc -l) | awk '{print $1+$3}'",
+        "interval": 3600,
+        "on-click": "kitty -e yay -Syu",
+        "signal": 8
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format": "{:%R}",
+        "format-alt": "{:%F %T}",
+        "interval": 1,
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "󰘚 {usage}%",
+        "tooltip": true,
+        "interval": 1,
+        "on-click": "kitty -e htop"
+    },
+    "disk": {
+        "interval": 30,
+        "format": "󰋊 {percentage_used}%",
+        "path": "/",
+        "on-click": "kitty -e gdu /"
+    },
+    "memory": {
+        "format": "󰍛 {}%",
+        "interval": 1,
+        "on-click": "kitty -e htop"
+    },
+    "network": {
+        "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-linked": "󰈀 {ifname} (No IP)",
+        "format-disconnected": "󰖪 Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}",
+        "on-click": "kitty -e nmtui"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂰 {volume}%",
+        "format-bluetooth-muted": "󰂲 {icon}",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "󰥰",
+            "headset": "󰋎",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["󱃃", "󰔏", "󱃂"],
+        "on-click": "kitty -e s-tui"
+    }
+}
