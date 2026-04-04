@@ -1,2 +1,2 @@
 eval "$(starship init bash)"
-fastfetch --logo ~/Pictures/Logos/bb.txt --logo-padding-left 2
+fastfetch --logo ~/logos/bb.txt --logo-padding-left 2
