@@ -1,15 +1,30 @@
-@define-color background #1a1b26;
-@define-color background-light #24283b;
-@define-color foreground #c0caf5;
-@define-color black #15161e;
-@define-color red #f7768e;
-@define-color green #9ece6a;
-@define-color yellow #e0af68;
-@define-color blue #7aa2f7;
-@define-color magenta #bb9af7;
-@define-color cyan #7dcfff;
-@define-color white #a9b1d6;
-@define-color orange #ff9e64;
+@define-color foreground #d3c6aa;
+@define-color red #e67e80;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+@define-color aqua #83c092;
+@define-color orange #e69875;
+@define-color statusline_1 #a7c080;
+@define-color statusline_2 #d3c6aa;
+@define-color statusline_3 #e67e80;
+@define-color grey_0 #7a8478;
+@define-color grey_1 #859289;
+@define-color grey_2 #9da9a0;
+@define-color background_dim #1e2326;
+@define-color background_0 #272e33;
+@define-color background_1 #2e383c;
+@define-color background_2 #374145;
+@define-color background_3 #414b50;
+@define-color background_4 #495156;
+@define-color background_5 #4f5b58;
+@define-color background_red #493b40;
+@define-color background_yellow #45443c;
+@define-color background_green #3c4841;
+@define-color background_blue #384b55;
+@define-color background_purple #463f48;
+@define-color background_visual #4c3743;
 
 * {
     border: none;
@@ -17,39 +32,53 @@
     font-family: "Iosevka Nerd Font", "Font Awesome 7 Free";
     font-size: 16px;
     min-height: 30px;
+    color: @blue;
 }
 
 window#waybar {
-    background: @background;
-    color: white;
+    background: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: @background_0;
+    border: 2px solid #62908a;
+}
+
+.modules-left {
+    margin: 0 0 10px 10px;
+    padding: 1px 7px 0 7px;
+}
+
+.modules-center {
+    margin: 0 0 10px 0;
+}
+
+.modules-right {
+    margin: 0 10px 10px 0;
 }
 
 #workspaces button {
-    color: @white;
-    padding: 0 8px;
+    padding: 0 12px 0 4px;
 }
 
 #custom-left-bracket,
 #custom-right-bracket,
 #custom-sep {
-    color: @white;
     padding: 0 5px;
 }
 
 #custom-updates {
-    color: @white;
     padding: 0 5px;
     margin: 0 2px;
 }
 
 #cpu, #disk, #memory, #network, #pulseaudio, #temperature {
-    color: @white;
     padding: 0 5px;
-    margin: 0 2px;
 }
 
 #clock {
-    color: @white;
     padding: 0 5px;
     margin: 0 2px;
     border-radius: 5px;
