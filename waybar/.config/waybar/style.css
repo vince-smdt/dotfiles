@@ -11,18 +11,6 @@
 @define-color white #a9b1d6;
 @define-color orange #ff9e64;
 
-
-@define-color clock-color @cyan;
-@define-color cpu-color @magenta;
-@define-color disk-color @orange;
-@define-color memory-color @green;
-@define-color network-color @blue;
-@define-color pulseaudio-color @red;
-@define-color temperature-color @yellow;
-@define-color workspaces-color @white;
-@define-color updates-color @white;
-
-
 * {
     border: none;
     border-radius: 0;
@@ -37,57 +25,32 @@ window#waybar {
 }
 
 #workspaces button {
-    color: white;
+    color: @white;
     padding: 0 8px;
 }
 
-#workspaces button.active {
-    background: @workspaces-color;
-    color: black;
+#custom-left-bracket,
+#custom-right-bracket,
+#custom-sep {
+    color: @white;
+    padding: 0 5px;
 }
 
-#clock, #cpu, #disk, #memory, #network, #pulseaudio, #temperature, #custom-updates {
-    border-top: 1px solid transparent;
+#custom-updates {
+    color: @white;
+    padding: 0 5px;
+    margin: 0 2px;
+}
+
+#cpu, #disk, #memory, #network, #pulseaudio, #temperature {
+    color: @white;
     padding: 0 5px;
     margin: 0 2px;
 }
 
 #clock {
-    color: @clock-color;
-    border-top-color: @clock-color;
-}
-
-#cpu {
-    color: @cpu-color;
-    border-top-color: @cpu-color;
-}
-
-#disk {
-    color: @disk-color;
-    border-top-color: @disk-color;
-}
-
-#memory {
-    color: @memory-color;
-    border-top-color: @memory-color;
-}
-
-#network {
-    color: @network-color;
-    border-top-color: @network-color;
-}
-
-#pulseaudio {
-    color: @pulseaudio-color;
-    border-top-color: @pulseaudio-color;
-}
-
-#temperature {
-    color: @temperature-color;
-    border-top-color: @temperature-color;
-}
-
-#custom-updates {
-    color: @updates-color;
-    border-top-color: @updates-color;
+    color: @white;
+    padding: 0 5px;
+    margin: 0 2px;
+    border-radius: 5px;
 }

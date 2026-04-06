@@ -2,10 +2,42 @@
     "layer": "top",
     "position": "bottom",
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": [],
-    "modules-right": ["custom/updates", "network", "pulseaudio", "disk", "memory", "cpu", "temperature", "clock"],
+    "modules-center": [
+        "custom/left-bracket",
+        "clock",
+        "custom/right-bracket"
+    ],
+    "modules-right": [
+        "custom/left-bracket",
+        "custom/updates",
+        "custom/sep",
+        "disk",
+        "custom/sep",
+        "memory",
+        "custom/sep",
+        "cpu",
+        "custom/sep",
+        "temperature",
+        "custom/sep",
+        "network",
+        "custom/sep",
+        "pulseaudio",
+        "custom/right-bracket"
+    ],
     "hyprland/window": {
         "max-length": 50
+    },
+    "custom/left-bracket": {
+        "format": "[",
+        "tooltip": false
+    },
+    "custom/right-bracket": {
+        "format": "]",
+        "tooltip": false
+    },
+    "custom/sep": {
+        "format": "|",
+        "tooltip": false
     },
     "custom/updates": {
         "format": "󰚰 {}",
@@ -15,7 +47,11 @@
         "signal": 8
     },
     "hyprland/workspaces": {
-        "format": "{name}",
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
         "persistent-workspaces": {
             "*": 5
         }
