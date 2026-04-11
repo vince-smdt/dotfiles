@@ -26,13 +26,17 @@
 @define-color background_purple #463f48;
 @define-color background_visual #4c3743;
 
+@define-color text-color #8dc3bb;
+@define-color background-color @background_0;
+@define-color border-color #62908a;
+
 * {
     border: none;
     border-radius: 0;
     font-family: "Iosevka Nerd Font", "Font Awesome 7 Free";
     font-size: 16px;
     min-height: 30px;
-    color: @blue;
+    color: @text-color;
 }
 
 window#waybar {
@@ -42,8 +46,8 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-    background: @background_0;
-    border: 2px solid #62908a;
+    background: @background-color;
+    border: 2px solid @border-color;
 }
 
 .modules-left {
@@ -69,12 +73,14 @@ window#waybar {
     padding: 0 5px;
 }
 
-#custom-updates {
-    padding: 0 5px;
-    margin: 0 2px;
-}
-
-#cpu, #disk, #memory, #network, #pulseaudio, #temperature {
+#cpu,
+#custom-updates,
+#disk,
+#hyprland-language,
+#memory,
+#network,
+#pulseaudio,
+#temperature {
     padding: 0 5px;
 }
 

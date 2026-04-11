@@ -21,6 +21,8 @@
         "custom/sep",
         "network",
         "custom/sep",
+        "hyprland/language",
+        "custom/sep",
         "pulseaudio",
         "custom/right-bracket"
     ],
@@ -46,16 +48,6 @@
         "on-click": "kitty -e yay -Syu",
         "signal": 8
     },
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "active": "",
-            "default": ""
-        },
-        "persistent-workspaces": {
-            "*": 5
-        }
-    },
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
@@ -77,6 +69,22 @@
         "format": "󰋊 {percentage_used}%",
         "path": "/",
         "on-click": "kitty -e gdu /"
+    },
+    "hyprland/language": {
+        "format": "󰌌 {}",
+        "format-en": "en-US",
+        "format-fr": "fr-CA"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "empty": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }
     },
     "memory": {
         "format": "󰍛 {}%",
