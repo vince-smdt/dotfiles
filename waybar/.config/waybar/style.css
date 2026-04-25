@@ -57,10 +57,12 @@ window#waybar {
 
 .modules-center {
     margin: 0 0 10px 0;
+    padding: 0 12px;
 }
 
 .modules-right {
     margin: 0 10px 10px 0;
+    padding: 0 12px;
 }
 
 #workspaces button {
@@ -70,18 +72,18 @@ window#waybar {
 #custom-left-bracket,
 #custom-right-bracket,
 #custom-sep {
-    padding: 0 5px;
+    padding: 0 4px;
 }
 
 #cpu,
 #custom-updates,
 #disk,
-#hyprland-language,
+#language,
 #memory,
 #network,
 #pulseaudio,
 #temperature {
-    padding: 0 5px;
+    padding: 0 4px;
 }
 
 #clock {

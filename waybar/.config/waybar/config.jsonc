@@ -9,15 +9,13 @@
     ],
     "modules-right": [
         "custom/left-bracket",
-        "custom/updates",
-        "custom/sep",
-        "disk",
-        "custom/sep",
-        "memory",
-        "custom/sep",
         "cpu",
         "custom/sep",
-        "temperature",
+        "memory",
+        "custom/right-bracket",
+        "custom/space",
+        "custom/left-bracket",
+        "custom/updates",
         "custom/sep",
         "network",
         "custom/sep",
@@ -41,6 +39,10 @@
         "format": "|",
         "tooltip": false
     },
+    "custom/space": {
+        "format": " ",
+        "tooltip": false
+    },
     "custom/updates": {
         "format": "󰚰 {}",
         "exec": "echo $(checkupdates 2>/dev/null | wc -l) + $(yay -Qua 2>/dev/null | wc -l) | awk '{print $1+$3}'",
@@ -59,14 +61,14 @@
         "tooltip": false
     },
     "cpu": {
-        "format": "󰘚 {usage}%",
+        "format": "CPU: {usage}%",
         "tooltip": true,
         "interval": 1,
         "on-click": "kitty -e htop"
     },
     "disk": {
         "interval": 30,
-        "format": "󰋊 {percentage_used}%",
+        "format": "DISK: {percentage_used}%",
         "path": "/",
         "on-click": "kitty -e gdu /"
     },
@@ -87,7 +89,7 @@
         }
     },
     "memory": {
-        "format": "󰍛 {}%",
+        "format": "RAM: {}%",
         "interval": 1,
         "on-click": "kitty -e htop"
     },
