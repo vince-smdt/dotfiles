@@ -175,7 +175,7 @@
 
 .control-center {
   background: @cc-bg;
-  margin: 15px;
+  margin: 5px 10px 10px 10px;
   /* margin-top: 10px; */
   /* margin-right: 10px; */
 
@@ -200,7 +200,7 @@
 
 /* Window behind control center and on all other monitors */
 .blank-window {
-  background: alpha(black, 0.2);
+  background: alpha(black, 0.0);
 }
 
 /*** Widgets ***/
