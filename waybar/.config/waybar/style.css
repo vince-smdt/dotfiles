@@ -26,13 +26,13 @@
 @define-color background_purple #463f48;
 @define-color background_visual #4c3743;
 
-@define-color text-color #9ad1c8;
+@define-color text-color @foreground;
 @define-color background-color @background_0;
-@define-color border-color #62908a;
+@define-color border-color @green;
 
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 6px;
     font-family: "Iosevka Nerd Font", "Font Awesome 7 Free";
     font-size: 16px;
     min-height: 30px;
@@ -48,20 +48,21 @@ window#waybar {
 .modules-right {
     background: @background-color;
     border: 2px solid @border-color;
+    box-shadow: 0px 0px 4px 0px rgba(26, 26, 26, 0.93);
 }
 
 .modules-left {
-    margin: 0 0 10px 10px;
+    margin: 10px 0 5px 10px;
     padding: 1px 7px 0 7px;
 }
 
 .modules-center {
-    margin: 0 0 10px 0;
+    margin: 10px 0 5px 0;
     padding: 0 12px;
 }
 
 .modules-right {
-    margin: 0 10px 10px 0;
+    margin: 10px 10px 5px 0;
     padding: 0 12px;
 }
 

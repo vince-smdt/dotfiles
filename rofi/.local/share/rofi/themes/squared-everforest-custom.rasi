@@ -1,5 +1,5 @@
 * {
-    font:   "Iosevka Nerd Font Medium 12";
+    font:   "Iosevka Nerd Font Medium 14";
 
     bg0:     #2B3339;
     bg1:     #323D43;
@@ -17,10 +17,12 @@
 }
 
 window {
-    location:   center;
-
-
+    location:           center;
     background-color:   @bg0;
+    border:             2px;
+    border-color:       @accent-color;
+    border-radius:      6px;
+    width:              35%;
 }
 
 inputbar {
@@ -54,10 +56,10 @@ textbox {
 
 listview {
     padding:    4px 0;
-    lines:      16;
+    lines:      10;
     columns:    1;
 
-    fixed-height:   false;
+    fixed-height:   true;
 }
 
 element {
