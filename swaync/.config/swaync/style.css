@@ -235,6 +235,10 @@
   font-weight: bold;
 }
 
+.widget-dnd > label {
+  color: @cc-fg;
+}
+
 .widget-dnd > switch {
   font-size: initial;
   border-radius: 10rem;
