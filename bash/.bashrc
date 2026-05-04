@@ -6,6 +6,6 @@ fastfetch --logo ~/logos/bb.txt --logo-padding-left 2
 
 . "$HOME/.cargo/env"
 
-if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ $- == *i* ]]; then
+if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ $- == *i* ]] && [[ $(tty) != /dev/tty* ]]; then
     tmux attach-session 2>/dev/null || tmux new-session
 fi
