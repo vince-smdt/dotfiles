@@ -3,45 +3,18 @@
     "position": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [
-        "custom/left-bracket",
-        "clock",
-        "custom/right-bracket"
+        "clock"
     ],
     "modules-right": [
-        "custom/left-bracket",
-        "cpu",
-        "custom/sep",
-        "memory",
-        "custom/right-bracket",
-        "custom/space",
-        "custom/left-bracket",
         "custom/updates",
-        "custom/sep",
+        "cpu",
+        "memory",
         "network",
-        "custom/sep",
         "hyprland/language",
-        "custom/sep",
-        "pulseaudio",
-        "custom/right-bracket"
+        "pulseaudio"
     ],
     "hyprland/window": {
         "max-length": 50
-    },
-    "custom/left-bracket": {
-        "format": "[",
-        "tooltip": false
-    },
-    "custom/right-bracket": {
-        "format": "]",
-        "tooltip": false
-    },
-    "custom/sep": {
-        "format": "|",
-        "tooltip": false
-    },
-    "custom/space": {
-        "format": " ",
-        "tooltip": false
     },
     "custom/updates": {
         "format": "󰚰 {}",
@@ -61,7 +34,7 @@
         "tooltip": false
     },
     "cpu": {
-        "format": "CPU: {usage}%",
+        "format": "  {usage}%",
         "tooltip": true,
         "interval": 1,
         "on-click": "kitty -e htop"
@@ -89,17 +62,18 @@
         }
     },
     "memory": {
-        "format": "RAM: {}%",
+        "format": "  {}%",
         "interval": 1,
         "on-click": "kitty -e htop"
     },
     "network": {
-        "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+        "format-wifi": "{icon}  {essid} ({signalStrength}%)",
         "format-ethernet": "󰈀 {ifname}",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "kitty -e nmtui"
+        "on-click": "kitty -e nmtui",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",

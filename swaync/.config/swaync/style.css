@@ -20,7 +20,7 @@
 .control-center .notification-default-action,
 .control-center .notification-action {
   background: @noti-bg;
-  border: 2px solid @noti-border-color;
+  border: 1px solid @noti-border-color;
 }
 
 .control-center .notification-default-action:hover,
@@ -72,7 +72,7 @@
   margin: 0;
   box-shadow: none;
   background: @floating-noti-bg;
-  border: 2px solid @floating-noti-border-color;
+  border: 1px solid @floating-noti-border-color;
   color: @text-color;
   transition: all 0.15s ease-in-out;
 }
@@ -180,7 +180,7 @@
   /* margin-right: 10px; */
 
   border-radius: 6px;
-  border: 2px solid @center-border-color;
+  border: 1px solid @center-border-color;
   box-shadow: 0px 0px 4px 0px rgba(26, 26, 26, 0.93);
   padding: 1rem;
 }
@@ -268,7 +268,7 @@
   background: @noti-bg;
   color: @text-color;
   border-radius: 6px;
-  border: 2px solid @noti-border-color;
+  border: 1px solid @noti-border-color;
 }
 .widget-mpris-player {
   padding: 1rem 1rem 0 1rem;
@@ -302,7 +302,7 @@
   margin-bottom: 1rem;
   padding: 0.8rem 1.4rem 0.8rem 1.4rem;
   border-radius: 6px;
-  border: 2px solid @noti-border-color;
+  border: 1px solid @noti-border-color;
   font-size: 22px;
 }
 
