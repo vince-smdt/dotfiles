@@ -9,3 +9,6 @@ fastfetch --logo ~/logos/bb.txt --logo-padding-left 2
 if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ $- == *i* ]] && [[ $(tty) != /dev/tty* ]]; then
     tmux attach-session 2>/dev/null || tmux new-session
 fi
+
+# opencode
+export PATH=/home/vince/.opencode/bin:$PATH
