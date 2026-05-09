@@ -10,5 +10,6 @@ if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ $- == *i* ]] && [[ $(
     tmux attach-session 2>/dev/null || tmux new-session
 fi
 
-# opencode
 export PATH=/home/vince/.opencode/bin:$PATH
+
+eval "$(zoxide init bash)"
