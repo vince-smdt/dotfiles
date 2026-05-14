@@ -135,3 +135,11 @@ hl.window_rule({
 	move = "20 monitor_h-120",
 	float = true,
 })
+
+hl.window_rule({
+	name = "change-maximized-window-border-color",
+	match = {
+		fullscreen_state_client = 1,
+	},
+	border_color = "rgba(7fbbb3ee)",
+})
