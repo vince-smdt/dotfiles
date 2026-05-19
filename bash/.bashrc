@@ -13,3 +13,6 @@ fi
 export PATH=/home/vince/.opencode/bin:$PATH
 
 eval "$(zoxide init bash)"
+
+# Created by `pipx` on 2026-05-17 19:48:31
+export PATH="$PATH:/home/vince/.local/bin"
