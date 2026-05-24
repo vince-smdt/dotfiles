@@ -7,8 +7,6 @@
     ],
     "modules-right": [
         "custom/updates",
-        "cpu",
-        "memory",
         "network",
         "hyprland/language",
         "pulseaudio"
@@ -46,9 +44,9 @@
         "on-click": "kitty -e gdu /"
     },
     "hyprland/language": {
-        "format": "󰌌 {}",
-        "format-en": "en-US",
-        "format-fr": "fr-CA"
+        "format": "{}",
+        "format-en": "en",
+        "format-fr": "fr"
     },
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -70,7 +68,7 @@
         "format-wifi": "{icon}  {essid} ({signalStrength}%)",
         "format-ethernet": "󰈀 {ifname}",
         "format-linked": "󰈀 {ifname} (No IP)",
-        "format-disconnected": "󰖪 Disconnected",
+        "format-disconnected": "󰤮  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
         "on-click": "kitty -e nmtui",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
@@ -86,10 +84,7 @@
             "headset": "󰋎",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click": "pavucontrol",
-        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
+        "on-click": "pavucontrol"
     },
     "temperature": {
         "critical-threshold": 80,
