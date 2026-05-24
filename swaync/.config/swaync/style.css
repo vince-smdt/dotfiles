@@ -175,13 +175,8 @@
 
 .control-center {
   background: @cc-bg;
-  margin: 5px 10px 10px 10px;
-  /* margin-top: 10px; */
-  /* margin-right: 10px; */
-
+  margin: 10px;
   border-radius: 6px;
-  border: 1px solid @center-border-color;
-  box-shadow: 0px 0px 4px 0px rgba(26, 26, 26, 0.93);
   padding: 1rem;
 }
 
@@ -213,6 +208,7 @@
   font-weight: bold;
   color: @text-color;
 }
+
 .widget-title > button {
   font-size: initial;
   font-weight: bold;
@@ -221,8 +217,9 @@
   background: @noti-bg;
   border: 1px solid @noti-border-color;
   border-radius: 10rem;
-  padding: 5px 15px 5px 15px;
+  padding: 6px 15px 4px 15px;
 }
+
 .widget-title > button:hover {
   background: @noti-bg-hover;
 }

@@ -1,12 +1,12 @@
 @define-color cc-bg                             #1e2326;
 @define-color cc-fg                             #d3c6aa;
 
-@define-color text-color                        #a7c080;
+@define-color text-color                        #d3c6aa; /* a7c080 */
 @define-color text-color-disabled               #969696;
 
 @define-color center-border-color               @text-color;
 
-@define-color bg-selected                       @text-color;
+@define-color bg-selected                       #a7c080;
 
 @define-color floating-noti-bg                  #1e2326;
 @define-color floating-noti-border-color        @text-color;
