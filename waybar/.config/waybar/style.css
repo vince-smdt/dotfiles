@@ -72,6 +72,15 @@ window#waybar {
     padding: 0 12px 0 4px;
 }
 
+#workspaces button:hover,
+#workspaces button:active,
+#workspaces button:focus {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
 #cpu,
 #custom-updates,
 #language,
