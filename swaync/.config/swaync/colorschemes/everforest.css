@@ -1,26 +1,27 @@
-@define-color cc-bg                             #1e2326;
-@define-color cc-fg                             #d3c6aa;
-
-@define-color text-color                        #d3c6aa; /* a7c080 */
-@define-color text-color-disabled               #969696;
-
-@define-color center-border-color               @text-color;
-
-@define-color bg-selected                       #a7c080;
-
-@define-color floating-noti-bg                  #1e2326;
-@define-color floating-noti-border-color        @text-color;
-@define-color floating-noti-bg-darker           #262626;
-@define-color floating-noti-bg-hover            #272e33;
-@define-color floating-noti-close-bg            #374145;
-@define-color floating-noti-close-bg-hover      #4f5b58;
-
-@define-color noti-bg                           @cc-bg;
-@define-color noti-border-color                 #4f5b58;
-@define-color noti-bg-darker                    #232a2e;
-@define-color noti-bg-hover                     #232a2e;
-@define-color noti-close-bg                     @floating-noti-close-bg;
-@define-color noti-close-bg-hover               @floating-noti-close-bg-hover;
-
-@define-color dnd-slider-button                 @cc-fg;
-@define-color dnd-slider-button-checked         @cc-bg;
+@define-color foreground #d3c6aa;
+@define-color red #e67e80;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+@define-color aqua #83c092;
+@define-color orange #e69875;
+@define-color statusline_1 #a7c080;
+@define-color statusline_2 #d3c6aa;
+@define-color statusline_3 #e67e80;
+@define-color grey_0 #7a8478;
+@define-color grey_1 #859289;
+@define-color grey_2 #9da9a0;
+@define-color background_dim #1e2326;
+@define-color background_0 #272e33;
+@define-color background_1 #2e383c;
+@define-color background_2 #374145;
+@define-color background_3 #414b50;
+@define-color background_4 #495156;
+@define-color background_5 #4f5b58;
+@define-color background_red #493b40;
+@define-color background_yellow #45443c;
+@define-color background_green #3c4841;
+@define-color background_blue #384b55;
+@define-color background_purple #463f48;
+@define-color background_visual #4c3743;
