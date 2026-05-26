@@ -141,9 +141,7 @@ scrollbar slider {
 
 .notification-content .image {
   -gtk-icon-filter: none;
-  -gtk-icon-size: 30px;
-  border-radius: 50px;
-  margin: 0 16px 0 0;
+  border-radius: 50%;
 }
 
 .notification-content .app-icon {
