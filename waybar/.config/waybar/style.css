@@ -92,7 +92,6 @@ window#waybar {
   margin: 0 2px;
   background: transparent;
   border-radius: 4px;
-  /* transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
 }
 
 #workspaces button.active {
@@ -102,16 +101,6 @@ window#waybar {
 
 #workspaces button.active label {
   color: @background-color;
-}
-
-#workspaces button.active {
-    padding: 0 12px;
-    margin: 0 2px;
-    background-color: @text-color;
-}
-
-#workspaces button.active label {
-    color: @background-color;
 }
 
 /* #workspaces button.special { */
