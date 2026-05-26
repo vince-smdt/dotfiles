@@ -1,7 +1,6 @@
 {
   "hyprland/workspaces": {
-    "format": "{icon} {windows}",
-    "on-click": "activate",
+    "format": "{icon}{windows}",
     "persistent-workspaces": {
       "*": 5
     },
@@ -44,11 +43,8 @@
       "qdbusviewer": "󰒓"
     },
     "format-icons": {
-      "active": "󰮯",
-      "special": "󱁂",
-      "default": "󰊠",
-      "urgent": "󰧵",
-      "empty": ""
+      "empty": "",
+      "default": ""
     },
     "show-special": true,
     "all-outputs": true
