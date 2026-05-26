@@ -1,6 +1,9 @@
 {
     "layer": "top",
     "position": "top",
+    "include": [
+        "./modules/workspace.jsonc"
+    ],
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [
         "clock"
@@ -47,17 +50,6 @@
         "format": "{}",
         "format-en": "en",
         "format-fr": "fr"
-    },
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "active": "",
-            "empty": "",
-            "default": ""
-        },
-        "persistent-workspaces": {
-            "*": 5
-        }
     },
     "memory": {
         "format": "  {}%",

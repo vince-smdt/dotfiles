@@ -41,8 +41,8 @@
     border-radius: 6px;
     font-family: "Iosevka Nerd Font", "Font Awesome 7 Free";
     font-size: 16px;
-    min-height: 30px;
     color: @text-color;
+    min-height: 0;
 }
 
 window#waybar {
@@ -56,7 +56,6 @@ window#waybar {
 
 .modules-left {
     margin: 10px 0 0 10px;
-    padding: 1px 7px 0 7px;
 }
 
 .modules-center {
@@ -68,10 +67,10 @@ window#waybar {
     margin: 5px 5px 0 0;
 }
 
-#workspaces button {
-    padding: 0 12px 0 4px;
-}
-
+/* #workspaces button { */
+/*     padding: 0 12px 0 4px; */
+/* } */
+/**/
 #workspaces button:hover,
 #workspaces button:active,
 #workspaces button:focus {
@@ -79,6 +78,71 @@ window#waybar {
     border: none;
     box-shadow: none;
     text-shadow: none;
+}
+
+#workspaces {
+    background-color: @background-color;
+    margin: 6px 4px;
+}
+
+#workspaces button {
+  min-width: 32px;
+  padding: 0 4px;
+  margin: 0 2px;
+  background: transparent;
+  border-radius: 4px;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+#workspaces button.active {
+  padding: 0 12px;
+  margin: 0 2px;
+  background-color: @text-color;
+}
+
+#workspaces button.active label {
+  color: @background-color;
+}
+
+#workspaces button.active {
+    padding: 0 12px;
+    margin: 0 2px;
+    background-color: @text-color;
+}
+
+#workspaces button.active label {
+    color: @background-color;
+}
+
+/* #workspaces button.special { */
+/*   color: @tertiary_fixed; */
+/* } */
+
+/* #workspaces button:hover { */
+/*   background-color: @surface_container_highest; */
+/*   color: @primary; */
+/* } */
+/**/
+
+/* #workspaces button.active:hover { */
+/*   background-color: @primary; */
+/*   color: @on_primary; */
+/* } */
+
+#workspaces button.empty {
+    color: @background_1;
+}
+
+/* #workspaces button.urgent { */
+/*   color: @red; */
+/* } */
+
+#workspaces button label:first-child {
+    margin-right: 8px;
+}
+
+#workspaces button label:last-child {
+    margin-left: 2px;
 }
 
 #cpu,
