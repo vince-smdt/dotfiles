@@ -87,15 +87,14 @@ window#waybar {
 }
 
 #workspaces button {
-  min-width: 32px;
-  padding: 0 4px;
+  min-width: 36px;
+  padding: 0 9px 0 10px;
   margin: 0 2px;
   background: transparent;
   border-radius: 4px;
 }
 
 #workspaces button.active {
-  padding: 0 12px;
   background-color: @text-color;
 }
 
