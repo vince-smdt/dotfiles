@@ -25,14 +25,9 @@ button {
 
 }
 
-button:focus,
-button:active {
+button:hover {
   background-color: #4f5b58;
   outline-style: none;
-}
-
-button:hover:not(:focus) {
-  background-color: #3a4546;
 }
 
 #logout {
