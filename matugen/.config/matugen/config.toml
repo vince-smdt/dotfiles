@@ -15,10 +15,10 @@ input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/swaync/matugen.css'
 post_hook = 'swaync-client -rs || true'
 
-[templates.swayosd]
-input_path = '~/.config/matugen/templates/swayosd.css'
-output_path = '~/.config/swayosd/matugen.css'
-post_hook = 'pkill -SIGUSR2 swayosd-server || true'
+[templates.hyprlock]
+input_path = '~/.config/matugen/templates/hyprlock-colors.conf'
+output_path = '~/.config/hypr/hyprlock-colors.conf'
+post_hook = 'sed -i "s/rgba(#/rgba(/g" ~/.config/hypr/hyprlock-colors.conf'
 
 [templates.rofi]
 input_path = '~/.config/matugen/templates/rofi.rasi'

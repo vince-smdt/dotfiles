@@ -1,7 +1,7 @@
 @import "matugen.css";
 
-@define-color text-color @foreground;
-@define-color background-color @background_0;
+@define-color text-color @on_surface;
+@define-color background-color @surface;
 
 * {
     border: none;
@@ -66,7 +66,7 @@ window#waybar {
 }
 
 #workspaces button.empty {
-    color: @background_1;
+    color: @surface_bright;
 }
 
 #workspaces button label:first-child {

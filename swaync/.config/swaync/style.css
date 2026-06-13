@@ -2,16 +2,16 @@
 
 :root {
   /* Colors */
-  --bg-1: @background_0;
-  --bg-2: @background_dim;
-  --bg-btn: @background_2;
-  --bg-btn-hover: @background_3;
-  --text: @foreground;
-  --text-disabled: @grey_1;
-  --border: @background_4;
-  --pri-low: @yellow;
-  --pri-normal: @green;
-  --pri-critical: @red;
+  --bg-1: @surface;
+  --bg-2: @surface_dim;
+  --bg-btn: @surface_container_lowest;
+  --bg-btn-hover: @surface_container_low;
+  --text: @on_surface;
+  --text-disabled: @outline;
+  --border: @surface_container;
+  --pri-low: @tertiary;
+  --pri-normal: @primary;
+  --pri-critical: @error;
 
   /* Sizes */
   --radius: 6px;
@@ -202,7 +202,7 @@ scrollbar slider {
 
 .notification-content .inline-reply .inline-reply-button {
   margin-left: 4px;
-  background: @background_2;
+  background: @surface_container_lowest;
   border: var(--border-width) solid var(--border);
   border-radius: var(--radius);
   color: var(--text);
@@ -210,7 +210,7 @@ scrollbar slider {
 
 .notification-content .inline-reply .inline-reply-button:disabled {
   background: initial;
-  color: @grey_2;
+  color: @on_surface_variant;
   border: var(--border-width) solid var(--border);
   border-color: transparent;
 }
