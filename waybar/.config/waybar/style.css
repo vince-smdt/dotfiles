@@ -1,40 +1,8 @@
-@define-color foreground #d3c6aa;
-@define-color red #e67e80;
-@define-color yellow #dbbc7f;
-@define-color green #a7c080;
-@define-color blue #7fbbb3;
-@define-color purple #d699b6;
-@define-color aqua #83c092;
-@define-color orange #e69875;
-@define-color statusline_1 #a7c080;
-@define-color statusline_2 #d3c6aa;
-@define-color statusline_3 #e67e80;
-@define-color grey_0 #7a8478;
-@define-color grey_1 #859289;
-@define-color grey_2 #9da9a0;
-@define-color background_dim #1e2326;
-@define-color background_0 #272e33;
-@define-color background_1 #2e383c;
-@define-color background_2 #374145;
-@define-color background_3 #414b50;
-@define-color background_4 #495156;
-@define-color background_5 #4f5b58;
-@define-color background_red #493b40;
-@define-color background_yellow #45443c;
-@define-color background_green #3c4841;
-@define-color background_blue #384b55;
-@define-color background_purple #463f48;
-@define-color background_visual #4c3743;
+@import "matugen.css";
 
 @define-color text-color @foreground;
 @define-color background-color @background_0;
 @define-color border-color @green;
-
-@define-color audio-color @text-color;
-@define-color language-color @text-color;
-@define-color network-color @text-color;
-@define-color memory-color @text-color;
-@define-color cpu-color @text-color;
 
 * {
     border: none;
@@ -67,10 +35,6 @@ window#waybar {
     margin: 5px 5px 0 0;
 }
 
-/* #workspaces button { */
-/*     padding: 0 12px 0 4px; */
-/* } */
-
 #workspaces button:hover,
 #workspaces button:active,
 #workspaces button:focus {
@@ -102,28 +66,9 @@ window#waybar {
   color: @background-color;
 }
 
-/* #workspaces button.special { */
-/*   color: @tertiary_fixed; */
-/* } */
-
-/* #workspaces button:hover { */
-/*   background-color: @surface_container_highest; */
-/*   color: @primary; */
-/* } */
-/**/
-
-/* #workspaces button.active:hover { */
-/*   background-color: @primary; */
-/*   color: @on_primary; */
-/* } */
-
 #workspaces button.empty {
     color: @background_1;
 }
-
-/* #workspaces button.urgent { */
-/*   color: @red; */
-/* } */
 
 #workspaces button label:first-child {
     margin-right: 8px;

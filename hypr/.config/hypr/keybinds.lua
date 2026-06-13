@@ -4,17 +4,13 @@ local browser = "firefox"
 local fileManager = "nautilus"
 local menu = "rofi -show drun"
 local notifications = "swaync-client -t -sw"
-local lock = "pidof hyprlock || hyprlock"
-local logoutsvc = "pgrep wlogout || wlogout --buttons-per-row=2"
 local terminal = "kitty"
 
-hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lock))
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(logoutsvc))
-
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
-hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({ mode = 1 }))
+local lock = "pidof hyprlock || hyprlock"
+local logout = "loginctl terminate-user $USER"
+local shutdown = "hyprshutdown --post-cmd 'systemctl poweroff'"
+local suspend = "systemctl suspend"
+local reboot = "hyprshutdown --post-cmd 'systemctl reboot'"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
@@ -24,10 +20,19 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lock))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(logout))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(shutdown))
+hl.bind(mainMod .. " + SHIFT + U", hl.dsp.exec_cmd(suspend))
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(reboot))
+
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("HYPRSHOT_DIR=~/Pictures/Screenshots hyprshot -m window"))
 hl.bind("PRINT", hl.dsp.exec_cmd("HYPRSHOT_DIR=~/Pictures/Screenshots hyprshot -m output"))
 hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("HYPRSHOT_DIR=~/Pictures/Screenshots hyprshot -m region"))
 
+hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
+hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))

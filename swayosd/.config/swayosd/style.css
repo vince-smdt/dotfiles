@@ -1,5 +1,4 @@
-@define-color osd-bg #1e2326;
-@define-color osd-fg #d3c6aa;
+@import "matugen.css";
 
 * {
   margin: 0;

@@ -1,4 +1,4 @@
-@import "./colorschemes/everforest.css";
+@import "matugen.css";
 
 :root {
   /* Colors */
@@ -15,7 +15,7 @@
 
   /* Sizes */
   --radius: 6px;
-  --border-width: 1px;
+  --border-width: 0px;
   --btn-size: 20px;
 
   /* Font sizes */
@@ -411,7 +411,6 @@ scrollbar slider {
 .widget-mpris .widget-mpris-player {
   margin: 10px 10px;
   border-radius: var(--radius);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   border: var(--border-width) solid var(--border);
 }
 
@@ -430,7 +429,6 @@ scrollbar slider {
 
 .widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-album-art {
   border-radius: var(--radius);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   -gtk-icon-size: 50px;
 }
 
