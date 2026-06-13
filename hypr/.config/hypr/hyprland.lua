@@ -16,11 +16,11 @@ hl.config({
 		gaps_in = 5,
 		gaps_out = 10,
 
-		border_size = 1,
+		border_size = 0,
 
 		col = {
-			active_border = "rgba(a7c080ee)",
-			inactive_border = "rgba(595959aa)",
+			active_border = "rgba(00000000)",
+			inactive_border = "rgba(00000000)",
 		},
 
 		resize_on_border = false,
@@ -37,7 +37,7 @@ hl.config({
 		inactive_opacity = 1.0,
 
 		shadow = {
-			enabled = true,
+			enabled = false,
 			range = 4,
 			render_power = 3,
 			color = 0xee1a1a1a,
@@ -134,12 +134,4 @@ hl.window_rule({
 	match = { class = "hyprland-run" },
 	move = "20 monitor_h-120",
 	float = true,
-})
-
-hl.window_rule({
-	name = "change-maximized-window-border-color",
-	match = {
-		fullscreen_state_client = 1,
-	},
-	border_color = "rgba(7fbbb3ee)",
 })
