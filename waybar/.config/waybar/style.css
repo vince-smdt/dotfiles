@@ -2,7 +2,6 @@
 
 @define-color text-color @foreground;
 @define-color background-color @background_0;
-@define-color border-color @green;
 
 * {
     border: none;
