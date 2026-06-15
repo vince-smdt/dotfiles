@@ -5,6 +5,7 @@ local fileManager = "nautilus"
 local menu = "rofi -show drun"
 local notifications = "swaync-client -t -sw"
 local terminal = "kitty"
+local changeTheme = "~/.config/hypr/scripts/switch_theme.sh"
 
 local lock = "pidof hyprlock || hyprlock"
 local logout = "loginctl terminate-user $USER"
@@ -16,9 +17,8 @@ hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(notifications))
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(changeTheme))
 
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lock))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(logout))
@@ -33,6 +33,8 @@ hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("HYPRSHOT_DIR=~/Pictures/
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
 hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({ mode = 1 }))
+hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
