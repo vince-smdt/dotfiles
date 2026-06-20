@@ -25,7 +25,7 @@ read -r next_wp next_mode <<< "${wps[$next_wp_idx]}"
 sed -i "s/path = .*/path = ~\/.config\/hypr\/wallpapers\/${next_wp}/" ../hyprpaper.conf
 
 # Generate templates
-matugen image --mode "${next_mode}" --source-color-index 0 "../wallpapers/${next_wp}"
+matugen image --lightness-dark -0.1 --lightness-light -0.1 --contrast 0.3 --type scheme-fidelity --resize-filter lanczos3 --mode "${next_mode}" --source-color-index 0 "../wallpapers/${next_wp}"
 
 # Restart hyprpaper
 pkill hyprpaper

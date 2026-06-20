@@ -1,7 +1,7 @@
 @import "matugen.css";
 
-@define-color text-color @on_surface;
-@define-color background-color @surface;
+@define-color text-color @primary;
+@define-color background-color @on_primary;
 
 * {
     border: none;

@@ -1,2 +1,3 @@
 streetlights_1.png dark
-a_foggy_forest_with_trees.jpg light
+a_mountain_with_snow_on_it.jpg light
+a_window_with_trees_in_the_background.jpg dark
