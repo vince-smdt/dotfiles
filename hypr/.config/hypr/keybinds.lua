@@ -18,7 +18,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(notifications))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(changeTheme))
+hl.bind(mainMod .. " + CTRL + SHIFT + T", hl.dsp.exec_cmd(changeTheme))
 
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lock))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(logout))

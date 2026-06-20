@@ -89,23 +89,3 @@ window#waybar {
     padding: 0 5px;
     margin: 0 2px;
 }
-
-#cpu {
-    color: @cpu-color;
-}
-
-#memory {
-    color: @memory-color;
-}
-
-#network {
-    color: @network-color;
-}
-
-#language {
-    color: @language-color;
-}
-
-#pulseaudio {
-    color: @audio-color;
-}

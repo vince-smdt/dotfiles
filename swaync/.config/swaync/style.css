@@ -301,7 +301,6 @@ scrollbar slider {
   color: var(--text);
   border-radius: var(--radius);
   border: var(--border-width) solid var(--border);
-  box-shadow: var(--shadow);
 }
 
 .control-center .control-center-list-placeholder {
@@ -326,8 +325,8 @@ scrollbar slider {
 
 /* Floating Notifications */
 .floating-notifications {
-    margin-top: 9px;
-    margin-right: 8px;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 .blank-window,
