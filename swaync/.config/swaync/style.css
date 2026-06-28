@@ -299,7 +299,7 @@ scrollbar slider {
 .control-center {
   background: var(--bg-1);
   color: var(--text);
-  border-radius: var(--radius);
+  border-radius: 0;
   border: var(--border-width) solid var(--border);
 }
 
